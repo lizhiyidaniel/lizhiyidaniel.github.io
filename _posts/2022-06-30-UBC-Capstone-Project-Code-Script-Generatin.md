@@ -30,7 +30,7 @@ Simply put, we aim to build a pipeline that can automatically translate manual t
 ![Pipeline](img/posts-katalon/pipeline2.jpg)
 
 For the full report: click the link below: <br>
-[Detailed Final Report](/Users/lizhiyi/Downloads/katalon/Final Report - Katalon.pdf)
+[Detailed Final Report](https://github.com/lizhiyidaniel/katalon/blob/main/Final%20Report%20-%20Katalon.pdf)
 
 ---
 <a name="gettingstarted"/></a>
@@ -49,7 +49,7 @@ For running the main notebook, if you want to use the trained tagger directly, y
 
 <a name="usage"/></a>
 ###  2.2. Usage
-The [main_notebook](main_notebook.ipynb) demonstrate how the whole pipeline works including Setup, Data, Tagging, Parsing, Test Scripts generation and Evaluation. <br>
+The [main_notebook](https://github.com/lizhiyidaniel/katalon/blob/main/main_notebook.ipynb) demonstrate how the whole pipeline works including Setup, Data, Tagging, Parsing, Test Scripts generation and Evaluation. <br>
 
 
 The [util](https://github.com/lizhiyidaniel/katalon/tree/main/util) contains the details about the modules and functions. <br>
