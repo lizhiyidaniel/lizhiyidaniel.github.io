@@ -1,11 +1,13 @@
-I" /<h1 id="table-of-contents">Table of Contents</h1>
+I"¿/<h2 id="view-github-repo-click-below">View Github Repo, Click Below:</h2>
+<p><a href="https://github.com/lizhiyidaniel/katalon">Github Repo</a></p>
+<h1 id="table-of-contents">Table of Contents</h1>
 <!--ts-->
 <ol>
   <li><a href="#about-the-project">About the Project</a></li>
   <li><a href="#getting-started">Getting Started</a><br />
   2.1. <a href="#prerequisites">Prerequisites</a><br />
   2.2. <a href="#usage">Usage</a></li>
-  <li><a href="#results">Results</a></li>
+  <li><a href="#evaluations">Evaluations</a></li>
   <li><a href="#documentation">Documentation</a> <br />
 <!--te--></li>
 </ol>
@@ -50,7 +52,7 @@ For the <a href="https://github.com/lizhiyidaniel/katalon/tree/main/util/evaluat
 
 <p>The different <a href="https://github.com/lizhiyidaniel/katalon/tree/main/notebooks/Taggers">tagger notebooks</a> show different methods of training the tagger to extract the entities of interest. <a href="https://github.com/lizhiyidaniel/katalon/tree/main/notebooks/Taggers/bert_tagger.ipynb">BERT tagger</a> is recommended for tagging task.</p>
 
-<h2 id="results">Results</h2>
+<h2 id="evaluations">Evaluations</h2>
 <p><a href="#table-of-contents">Back to Top</a></p>
 
 <h3 id="f1-score-">F1 Score <br /></h3>
@@ -69,7 +71,7 @@ The n-gram overlap counts how many unigrams, bigrams, trigrams, and four-grams (
 <img src="/img/posts-katalon/BLEU_cal.png" alt="BLEU interpretation" /></p>
 
 <hr />
-<h2 id="5-documentation">5. Documentation</h2>
+<h2 id="documentation">Documentation</h2>
 <p><a href="#table-of-contents">Back to Top</a></p>
 
 <h3 id="references">References:</h3>

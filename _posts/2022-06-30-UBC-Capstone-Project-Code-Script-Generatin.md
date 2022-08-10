@@ -2,16 +2,17 @@
 layout: post
 title: "UBC Capstone Project: Code Scripts Generation by using NLP"
 subtitle: "A end to end pipeline to generate code scripts in Groovy from English instructions written by customers to accelerate software testing"
-background: '/img/posts/01.jpg'
+background: '/img/bg-about.jpg'
 ---
-
+## View Github Repo, Click Below:
+[Github Repo](https://github.com/lizhiyidaniel/katalon)
 # Table of Contents  
 <!--ts-->
    1. [About the Project](#about-the-project)
    2. [Getting Started](#getting-started)  
         2.1. [Prerequisites](#prerequisites)  
         2.2. [Usage](#usage)  
-   3. [Results](#results)  
+   3. [Evaluations](#evaluations)  
    4. [Documentation](#documentation)   
 <!--te-->
 
@@ -58,7 +59,7 @@ The different [tagger notebooks](https://github.com/lizhiyidaniel/katalon/tree/m
 
 
 
-## Results
+## Evaluations
 [Back to Top](#table-of-contents)
 
 ### F1 Score <br>
@@ -78,7 +79,7 @@ The n-gram overlap counts how many unigrams, bigrams, trigrams, and four-grams (
 
 
 ---
-## 5. Documentation
+## Documentation
 [Back to Top](#table-of-contents)
 
 ### References: 
