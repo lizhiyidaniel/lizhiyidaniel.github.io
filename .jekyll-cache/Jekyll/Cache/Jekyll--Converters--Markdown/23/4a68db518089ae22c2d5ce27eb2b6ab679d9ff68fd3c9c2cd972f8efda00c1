@@ -1,0 +1,6 @@
+I"<h1 id="view-the-original-github-repo">View the original Github Repo:</h1>
+<p>Naive Bayes is a popular rstatistical technique for e-mail filtering. It uses bag-of-words features (use countvectorizer to create the features from the text) to identify the email spam. <br />
+It uses a Bayes’ theorem to calculate a probability that an email is spam or not and it usually has low false positive spam detection rates, meaning that it rarely misclassify an legitimate email as spam. However, as its name suggest, it assumes strong and naive assumption about the independence of the words, which is rarely the case for words in the context. 
+<a href="https://github.com/lizhiyidaniel/spam_classifier_naive_bayes">Click here</a></p>
+<h1 id="import-the-library">Import the library</h1>
+:ET
