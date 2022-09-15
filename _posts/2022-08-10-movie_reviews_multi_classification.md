@@ -5,7 +5,8 @@ subtitle: "Use Transformer based model to predict multi-class sentiment for movi
 background: '/img/bg-about.jpg'
 ---
 
-# For better Visualization, Click Github Repo: [Click Here](https://github.com/lizhiyidaniel/sentiment_analysis_with_transformers)
+# For better Visualization, Click Github Repo: 
+[Click Here](https://github.com/lizhiyidaniel/sentiment_analysis_with_transformers)
 
 ---------------------
 # Obtain the datasets from kaggle 
