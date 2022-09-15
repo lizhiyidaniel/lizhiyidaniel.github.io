@@ -1,3 +1,13 @@
+---
+layout: post
+title: "Use BERT model to predict sentiment of movie reviews"
+subtitle: "Use Transformer based model to predict multi-class sentiment for movie reviews | NLP | TensorFlow | Transformers"
+background: '/img/bg-about.jpg'
+---
+
+# For better Visualization, Click Github Repo: [Click Here](https://github.com/lizhiyidaniel/sentiment_analysis_with_transformers)
+
+---------------------
 # Obtain the datasets from kaggle 
 Using KaggleAPI to obtain the [Sentiment Analysis on Movie Review Datasets](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data)
 
@@ -23,16 +33,6 @@ files.upload()
  current browser session. Please rerun this cell to enable.
  </output>
  <script src="/nbextensions/google.colab/files.js"></script> 
-
-
-    Saving kaggle.json to kaggle.json
-
-
-
-
-
-    {'kaggle.json': b'{"username":"zhiyil5","key":"585c5806655d565e36eae6bd814dee41"}'}
-
 
 
 [Using Kaggle API on Colab](https://www.kaggle.com/general/74235)
@@ -270,16 +270,9 @@ Check the distribution of the sentiment classes to see if there are any class im
 df["Sentiment"].value_counts().plot(kind="bar")
 ```
 
-
-
-
     <matplotlib.axes._subplots.AxesSubplot at 0x7f09c12b4cd0>
 
-
-
-
-    
-![png](output_11_1.png)
+![Static Dashboard](/img/sentiment-movie/output_11_1.png)
     
 
 
