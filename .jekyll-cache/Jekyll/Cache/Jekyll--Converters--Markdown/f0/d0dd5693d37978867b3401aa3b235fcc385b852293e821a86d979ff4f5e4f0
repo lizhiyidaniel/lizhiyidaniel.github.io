@@ -1,9 +1,10 @@
-I"[8<p>View Original Github Repo: <a href="https://github.com/lizhiyidaniel/Marketing_segmentation_unsupervised_learning">click here</a> <br />
+I"V0<p>View Original Github Repo: <a href="https://github.com/lizhiyidaniel/Marketing_segmentation_unsupervised_learning">click here</a> <br />
 View Original Notebook: <a href="https://github.com/lizhiyidaniel/Marketing_segmentation_unsupervised_learning/blob/main/Marketing_Segmentation_Unsupervised_Learning.ipynb">click here</a></p>
 
 <h1 id="understand-marketing-segmentation">Understand Marketing Segmentation</h1>
 
 <p>Why Marketing is essential?</p>
+
 <ul>
   <li>Marketing is crucial for the growth and sustainability of businesses</li>
   <li>Marketing could help to build the company’s brand, engage customers, grow revenue and increase sales</li>
@@ -27,7 +28,7 @@ View Original Notebook: <a href="https://github.com/lizhiyidaniel/Marketing_segm
 <p>Task: Launch targeted ad marketing compaign by dividing customers into distinctive groups
 data: banking data about customers for past 6 months</p>
 
-<p>Data Source: https://www.kaggle.com/arjunbhasin2013/ccdata</p>
+<p>Data Source: <a href="https://www.kaggle.com/arjunbhasin2013/ccdata">https://www.kaggle.com/arjunbhasin2013/ccdata</a></p>
 
 <p>Data Information:
 This case requires to develop a customer segmentation to define marketing strategy. The
@@ -396,69 +397,44 @@ MINIMUM_PAYMENTS : Minimum amount of payments made by user</li>
       fill: #FFFFFF;
     }
   </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-3dcca508-4b14-4f14-a6d9-addb0e068292 button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3dcca508-4b14-4f14-a6d9-addb0e068292');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
   </div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">creditcard_df</span><span class="p">.</span><span class="n">info</span><span class="p">()</span>
-<span class="c1"># 18 features with 8950 points  
-</span></code></pre></div></div>
+```python
+creditcard_df.info()
+# 18 features with 8950 points  
+```
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
-RangeIndex: 8950 entries, 0 to 8949
-Data columns (total 18 columns):
- #   Column                            Non-Null Count  Dtype  
----  ------                            --------------  -----  
- 0   CUST_ID                           8950 non-null   object 
- 1   BALANCE                           8950 non-null   float64
- 2   BALANCE_FREQUENCY                 8950 non-null   float64
- 3   PURCHASES                         8950 non-null   float64
- 4   ONEOFF_PURCHASES                  8950 non-null   float64
- 5   INSTALLMENTS_PURCHASES            8950 non-null   float64
- 6   CASH_ADVANCE                      8950 non-null   float64
- 7   PURCHASES_FREQUENCY               8950 non-null   float64
- 8   ONEOFF_PURCHASES_FREQUENCY        8950 non-null   float64
- 9   PURCHASES_INSTALLMENTS_FREQUENCY  8950 non-null   float64
- 10  CASH_ADVANCE_FREQUENCY            8950 non-null   float64
- 11  CASH_ADVANCE_TRX                  8950 non-null   int64  
- 12  PURCHASES_TRX                     8950 non-null   int64  
- 13  CREDIT_LIMIT                      8949 non-null   float64
- 14  PAYMENTS                          8950 non-null   float64
- 15  MINIMUM_PAYMENTS                  8637 non-null   float64
- 16  PRC_FULL_PAYMENT                  8950 non-null   float64
- 17  TENURE                            8950 non-null   int64  
-dtypes: float64(14), int64(3), object(1)
-memory usage: 1.2+ MB
-</code></pre></div></div>
+    &lt;class 'pandas.core.frame.DataFrame'&gt;
+    RangeIndex: 8950 entries, 0 to 8949
+    Data columns (total 18 columns):
+     #   Column                            Non-Null Count  Dtype  
+    ---  ------                            --------------  -----  
+     0   CUST_ID                           8950 non-null   object 
+     1   BALANCE                           8950 non-null   float64
+     2   BALANCE_FREQUENCY                 8950 non-null   float64
+     3   PURCHASES                         8950 non-null   float64
+     4   ONEOFF_PURCHASES                  8950 non-null   float64
+     5   INSTALLMENTS_PURCHASES            8950 non-null   float64
+     6   CASH_ADVANCE                      8950 non-null   float64
+     7   PURCHASES_FREQUENCY               8950 non-null   float64
+     8   ONEOFF_PURCHASES_FREQUENCY        8950 non-null   float64
+     9   PURCHASES_INSTALLMENTS_FREQUENCY  8950 non-null   float64
+     10  CASH_ADVANCE_FREQUENCY            8950 non-null   float64
+     11  CASH_ADVANCE_TRX                  8950 non-null   int64  
+     12  PURCHASES_TRX                     8950 non-null   int64  
+     13  CREDIT_LIMIT                      8949 non-null   float64
+     14  PAYMENTS                          8950 non-null   float64
+     15  MINIMUM_PAYMENTS                  8637 non-null   float64
+     16  PRC_FULL_PAYMENT                  8950 non-null   float64
+     17  TENURE                            8950 non-null   int64  
+    dtypes: float64(14), int64(3), object(1)
+    memory usage: 1.2+ MB
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">creditcard_df</span><span class="p">.</span><span class="n">describe</span><span class="p">()</span>
-</code></pre></div></div>
+```python
+creditcard_df.describe()
+```
 
-<div id="df-85f53e5a-3e15-41dc-98b6-76f127a5b88c">
+  <div id="df-85f53e5a-3e15-41dc-98b6-76f127a5b88c">
     <div class="colab-df-container">
       <div>
 <style scoped="">
@@ -707,9 +683,9 @@ memory usage: 1.2+ MB
       fill: #FFFFFF;
     }
   </style>
+  </div>
 
-
-Mean balance is $1564 
+Mean balance is $1564
 
 Balance frequency is frequently updated on average ~0.9
 
@@ -719,7 +695,7 @@ one off purchase average is ~$600
 
 Average purchases frequency is around 0.5
 
-average ONEOFF_PURCHASES_FREQUENCY, 
+average ONEOFF_PURCHASES_FREQUENCY,
 PURCHASES_INSTALLMENTS_FREQUENCY, and CASH_ADVANCE_FREQUENCY are generally low
 
 Average credit limit ~ 4500
@@ -730,33 +706,19 @@ Average tenure is 11 years
 
 # VISUALIZE AND EXPLORE DATASET
 
-
 ```python
  sns.heatmap(creditcard_df.isnull(), yticklabels = False, cbar = False, cmap="Blues")
 
 ```
 
-
-
-
     &lt;matplotlib.axes._subplots.AxesSubplot at 0x7fe5b3b1ba90&gt;
 
-
-
-
-    
-![png](output_14_1.png)
-    
-
-
+![png](/img/marketing/output_14_1.png)
 
 ```python
 # check null values as seen from the heatmap graph
 creditcard_df.isnull().sum()
 ```
-
-
-
 
     CUST_ID                               0
     BALANCE                               0
@@ -778,67 +740,41 @@ creditcard_df.isnull().sum()
     TENURE                                0
     dtype: int64
 
-
-
-
 ```python
 # Fill up the missing elements with mean of the 'MINIMUM_PAYMENT' 
 creditcard_df.loc[(creditcard_df['MINIMUM_PAYMENTS'].isnull() == True), 'MINIMUM_PAYMENTS'] = creditcard_df['MINIMUM_PAYMENTS'].mean()
 
 ```
 
-
 ```python
 # Fill up the missing elements with mean of the 'CREDIT_LIMIT' 
 creditcard_df.loc[(creditcard_df['CREDIT_LIMIT'].isnull() == True), 'CREDIT_LIMIT'] = creditcard_df['CREDIT_LIMIT'].mean()
 ```
-
 
 ```python
  #All missing elements removed
  sns.heatmap(creditcard_df.isnull(), yticklabels = False, cbar = False, cmap="Blues")
 ```
 
-
-
-
     &lt;matplotlib.axes._subplots.AxesSubplot at 0x7fe5b1231150&gt;
 
-
-
-
-    
 ![png](/img/marketing/output_18_1.png)
-    
-
-
 
 ```python
 # checck duplicated entries 
 creditcard_df.duplicated().sum()
 ```
 
-
-
-
     0
-
-
-
 
 ```python
 # drop Customer ID (ID has no meaning in training)
 creditcard_df.drop("CUST_ID", axis = 1, inplace= True)
 ```
 
-
 ```python
 creditcard_df.head()
 ```
-
-
-
-
 
   <div id="df-487d3a57-56e1-4429-9b7d-f35fa13039a1">
     <div class="colab-df-container">
@@ -1030,16 +966,10 @@ creditcard_df.head()
     }
   </style>
 
-
-
-
 ```python
 #check all columns
 creditcard_df.columns
 ```
-
-
-
 
     Index(['BALANCE', 'BALANCE_FREQUENCY', 'PURCHASES', 'ONEOFF_PURCHASES',
            'INSTALLMENTS_PURCHASES', 'CASH_ADVANCE', 'PURCHASES_FREQUENCY',
@@ -1048,9 +978,6 @@ creditcard_df.columns
            'CREDIT_LIMIT', 'PAYMENTS', 'MINIMUM_PAYMENTS', 'PRC_FULL_PAYMENT',
            'TENURE'],
           dtype='object')
-
-
-
 
 ```python
 # KDE demonstrates the probability density at different values in a continuous variable. 
@@ -1064,104 +991,73 @@ for i in range(len(creditcard_df.columns)):
 plt.tight_layout()
 ```
 
-
-    
 ![png](/img/marketing/output_23_1.png)
-    
-
-
 
 ```python
 correlations = creditcard_df.corr()
 
 ```
 
-
 ```python
 f, ax = plt.subplots(figsize = (20, 20))
 sns.heatmap(correlations, annot = True)
 ```
 
-
-
-
     &lt;matplotlib.axes._subplots.AxesSubplot at 0x7fe5afd7b650&gt;
 
-
-
-
-    
 ![png](/img/marketing/output_25_1.png)
-    
 
+- 'PURCHASES' have high correlation between one-off purchases, 'installment purchases, purchase transactions, credit limit and payments.
+- Strong Positive Correlation between 'PURCHASES_FREQUENCY' and 'PURCHASES_INSTALLMENT_FREQUENCY'
 
-* 'PURCHASES' have high correlation between one-off purchases, 'installment purchases, purchase transactions, credit limit and payments. 
-* Strong Positive Correlation between 'PURCHASES_FREQUENCY' and 'PURCHASES_INSTALLMENT_FREQUENCY'
+# What is K-MEANS?
 
-
-# What is K-MEANS? 
 K-means intuition:
-* K-means is an unsupervised learning algorithm (clustering)
-* K-means works by grouping some data points togetheer (clustering) in an unsupervisedd fashion
-* The algorithm works by grouping observations with similar attributes values together by measuring the Euclidian distance between points
+- K-means is an unsupervised learning algorithm (clustering)
+- K-means works by grouping some data points togetheer (clustering) in an unsupervisedd fashion
+- The algorithm works by grouping observations with similar attributes values together by measuring the Euclidian distance between points
 
-K-means algorithm steps 
+K-means algorithm steps
+
 1. Choose number of clusters "K"
 2. Select k random points from the data as centroids
 3. Assign all the points to the closest cluster centroid
 4. Recompute the centroids of newly formed clusters
 5. Repeat steps 3 and 4
 
-
 Stopping Criteria for K-Means Clustering
+
 1. Centroids of newly formed clusters do not change
 2. Points remain in the same cluster
 3. Maximum number of iterations are reached
-
 
 ```python
 from IPython.display import Image
 Image(filename='/content/k-means.png') 
 ```
 
-
-
-
-    
 ![png](/img/marketing/output_29_0.png)
-    
 
-
-
-Graph Credit: https://www.analyticsvidhya.com/blog/2020/10/a-simple-explanation-of-k-means-clustering/
+Graph Credit: &lt;https://www.analyticsvidhya.com/blog/2020/10/a-simple-explanation-of-k-means-clustering/&gt;
 
 How to select the optimal number of clusters? Elbow method
-* The elbow method is a heuristic method of interpretation and validation of consistency within cluster analysis designed to help find the appropriate number of clusters in a dataset.
-* If the line chart looks like an arm, then the "elbow" on the arm is the value of k that is the best.
-* the cluster value where this decrease in inertia value becomes constant can be chosen as the right cluster value for our data.
-
+- The elbow method is a heuristic method of interpretation and validation of consistency within cluster analysis designed to help find the appropriate number of clusters in a dataset.
+- If the line chart looks like an arm, then the "elbow" on the arm is the value of k that is the best.
+- the cluster value where this decrease in inertia value becomes constant can be chosen as the right cluster value for our data.
 
 ```python
 from IPython.display import Image
 Image(filename='/content/elbow.png') 
 ```
 
-
-
-
-    
 ![png](/img/marketing/output_32_0.png)
-    
 
-
-
-Reference: 
-* https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/
-* https://en.wikipedia.org/wiki/Elbow_method_(clustering)
-* https://www.geeksforgeeks.org/elbow-method-for-optimal-value-of-k-in-kmeans/
+Reference:
+- &lt;https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/&gt;
+- &lt;https://en.wikipedia.org/wiki/Elbow_method_(clustering&gt;)
+- &lt;https://www.geeksforgeeks.org/elbow-method-for-optimal-value-of-k-in-kmeans/&gt;
 
 # FIND THE OPTIMAL NUMBER OF CLUSTERS USING ELBOW METHOD
-
 
 ```python
 # scale the data
@@ -1169,13 +1065,9 @@ scaler = StandardScaler()
 creditcard_df_scaled = scaler.fit_transform(creditcard_df)
 ```
 
-
 ```python
 creditcard_df_scaled
 ```
-
-
-
 
     array([[-0.73198937, -0.24943448, -0.42489974, ..., -0.31096755,
             -0.52555097,  0.36067954],
@@ -1190,9 +1082,6 @@ creditcard_df_scaled
              0.32919999, -4.12276757],
            [-0.57257511, -0.88903307,  0.04214581, ..., -0.33294642,
             -0.52555097, -4.12276757]])
-
-
-
 
 ```python
 scores_1 = []
@@ -1211,18 +1100,13 @@ plt.ylabel('Scores')
 plt.show()
 ```
 
-
-    
 ![png](/img/marketing/output_37_0.png)
-    
 
-
-4th cluster seems to be forming the elbow of the curve. but the values does not reduce linearly until 8th cluster. 
+4th cluster seems to be forming the elbow of the curve. but the values does not reduce linearly until 8th cluster.
 
 8 seems to be a good choice of cluster numnber
 
 # APPLY K-MEANS METHOD
-
 
 ```python
 kmeans = KMeans(8)
@@ -1230,27 +1114,16 @@ kmeans.fit(creditcard_df_scaled)
 labels = kmeans.labels_
 ```
 
-
 ```python
 kmeans.cluster_centers_.shape
 ```
 
-
-
-
     (8, 17)
-
-
-
 
 ```python
 cluster_centers = pd.DataFrame(data = kmeans.cluster_centers_, columns = [creditcard_df.columns])
 cluster_centers           
 ```
-
-
-
-
 
   <div id="df-886e32bf-f0eb-4af3-8dfe-b0b2e3d5ca01">
     <div class="colab-df-container">
@@ -1529,20 +1402,12 @@ cluster_centers
     </div>
   </div>
 
-
-
-
-
 ```python
 # perform inverse transformation to return the original value
 cluster_centers = scaler.inverse_transform(cluster_centers)
 cluster_centers = pd.DataFrame(data = cluster_centers, columns = [creditcard_df.columns])
 cluster_centers
 ```
-
-
-
-
 
   <div id="df-89fab91f-8064-443e-a1ec-533cc93a0c2a">
     <div class="colab-df-container">
@@ -1794,35 +1659,19 @@ cluster_centers
     }
   </style>
 
-
-
-
-
-
-
 ```python
 y_kmeans = kmeans.fit_predict(creditcard_df_scaled)
 y_kmeans
 
 ```
 
-
-
-
     array([1, 2, 5, ..., 0, 1, 1], dtype=int32)
-
-
-
 
 ```python
 # concatenate the clusters labels to our original dataframe
 creditcard_df_cluster = pd.concat([creditcard_df, pd.DataFrame({'cluster':labels})], axis = 1)
 creditcard_df_cluster.head()
 ```
-
-
-
-
 
   <div id="df-cff7a35d-d034-4410-93f4-87445e063cb4">
     <div class="colab-df-container">
@@ -2020,9 +1869,6 @@ creditcard_df_cluster.head()
     }
   </style>
 
-
-
-
 ```python
 # Plot the histogram of various clusters
 for i in creditcard_df.columns:
@@ -2038,136 +1884,57 @@ for i in creditcard_df.columns:
 
 ```
 
-
-    
 ![png](/img/marketing/output_46_0.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_1.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_2.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_3.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_4.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_5.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_6.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_7.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_8.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_9.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_10.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_11.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_12.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_13.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_14.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_15.png)
-    
 
-
-
-    
 ![png](/img/marketing/output_46_16.png)
-    
-
 
 # APPLY PRINCIPAL COMPONENT ANALYSIS AND VISUALIZE THE RESULTS
 
 What is Principal Component Analysis:
-* PCA can be an excellent way to understand which features are more relevant for a particular machine learning problem.
-* PCA is a practical mathematical approach for reducing data complexity. It finds linear combinations of the input fields that best represent the statistical variation in the complete set of areas. The data components are orthogonal to and unrelated to one another.
-* We can use PCA to select the most relevant data features.
-
+- PCA can be an excellent way to understand which features are more relevant for a particular machine learning problem.
+- PCA is a practical mathematical approach for reducing data complexity. It finds linear combinations of the input fields that best represent the statistical variation in the complete set of areas. The data components are orthogonal to and unrelated to one another.
+- We can use PCA to select the most relevant data features.
 
 ```python
 from IPython.display import Image
 Image(filename='/content/PCA.jpg') 
 ```
 
-
-
-
-    
 ![jpeg](/img/marketing/output_49_0.jpg)
-    
 
-
-
-Reference: 
-* https://www.analyticsvidhya.com/blog/2022/04/principal-component-analysis-its-implementions/
-* https://kindsonthegenius.com/blog/what-is-principal-component-analysis-pca-a-simple-tutorial/
-
-
-
+Reference:
+- &lt;https://www.analyticsvidhya.com/blog/2022/04/principal-component-analysis-its-implementions/&gt;
+- &lt;https://kindsonthegenius.com/blog/what-is-principal-component-analysis-pca-a-simple-tutorial/&gt;
 
 ```python
 # Obtain the principal components 
@@ -2175,9 +1942,6 @@ pca = PCA(n_components=2)
 principal_comp = pca.fit_transform(creditcard_df_scaled)
 principal_comp
 ```
-
-
-
 
     array([[-1.6822204 , -1.07645266],
            [-1.13830198,  2.50648626],
@@ -2187,18 +1951,11 @@ principal_comp
            [-2.33654747, -0.65797296],
            [-0.556424  , -0.40045541]])
 
-
-
-
 ```python
 # Create a dataframe with the two components
 pca_df = pd.DataFrame(data = principal_comp, columns =['pca1','pca2'])
 pca_df.head()
 ```
-
-
-
-
 
   <div id="df-693bd20e-1e30-407e-a8ac-713a15e27f3e">
     <div class="colab-df-container">
@@ -2300,21 +2057,11 @@ pca_df.head()
     }
   </style>
 
-
-
-
-
-
-
 ```python
 # Concatenate the clusters labels to the dataframe
 pca_df = pd.concat([pca_df,pd.DataFrame({'cluster':labels})], axis = 1)
 pca_df.head()
 ```
-
-
-
-
 
   <div id="df-c4b4cd26-d677-45d6-91eb-345fd6f3846b">
     <div class="colab-df-container">
@@ -2422,11 +2169,7 @@ pca_df.head()
     }
   </style>
 
-
-
-
 Visualize the clusters we have
-
 
 ```python
 plt.figure(figsize=(10,10))
@@ -2434,59 +2177,38 @@ ax = sns.scatterplot(x="pca1", y="pca2", hue = "cluster", data = pca_df, palette
 plt.show()
 ```
 
-
-    
 ![png](/img/marketing/output_55_0.png)
-    
-
 
 # Use autoencoders to perform data encoding
 
 Tuition behind autoencoders:
-* Auto encoders are one of artificial neural networks that are used to perform data encoding (representation learning)
-* Auto encoders use the same input data for the input and output
-
+- Auto encoders are one of artificial neural networks that are used to perform data encoding (representation learning)
+- Auto encoders use the same input data for the input and output
 
 ```python
 from IPython.display import Image
 Image(filename='/content/bottleneck.png') 
 ```
 
-
-
-
-    
 ![png](/img/marketing/output_58_0.png)
-    
-
-
-
 
 ```python
 from IPython.display import Image
 Image(filename='/content/auto-encoder.png') 
 ```
 
-
-
-
-    
 ![png](/img/marketing/output_59_0.png)
-    
-
-
 
 The code layer:
-* Auto encoders work by adding a bottleneck in the network
-* The bottleneck forces the network to create a compressed (encoded) version of the original input
-* This works well if correlation exists between input data 
+- Auto encoders work by adding a bottleneck in the network
+- The bottleneck forces the network to create a compressed (encoded) version of the original input
+- This works well if correlation exists between input data
 
-Reference: 
-* https://www.jeremyjordan.me/autoencoders/#:~:text=Autoencoders%20are%20an%20unsupervised%20learning,representation%20of%20the%20original%20input.
-* https://stats.stackexchange.com/questions/175302/why-do-autoencoders-come-under-unsupervised-learning
+Reference:
+- &lt;https://www.jeremyjordan.me/autoencoders/#:~:text=Autoencoders%20are%20an%20unsupervised%20learning,representation%20of%20the%20original%20input&gt;.
+- &lt;https://stats.stackexchange.com/questions/175302/why-do-autoencoders-come-under-unsupervised-learning&gt;
 
 # APPLY AUTOENCODERS (PERFORM DIMENSIONALITY REDUCTION USING AUTOENCODERS)
-
 
 ```python
 from tensorflow.keras.layers import Input, Add, Dense, Activation, ZeroPadding2D, BatchNormalization, Flatten, Conv2D, AveragePooling2D, MaxPooling2D, Dropout
@@ -2523,18 +2245,11 @@ autoencoder.compile(optimizer= 'adam', loss='mean_squared_error')
 
 ```
 
-
 ```python
 creditcard_df_scaled.shape
 ```
 
-
-
-
     (8950, 17)
-
-
-
 
 ```python
 autoencoder.fit(creditcard_df_scaled, creditcard_df_scaled, batch_size = 128, epochs = 25,  verbose = 1)
@@ -2597,30 +2312,19 @@ autoencoder.fit(creditcard_df_scaled, creditcard_df_scaled, batch_size = 128, ep
 
     &lt;keras.callbacks.History at 0x7fe5490f86d0&gt;
 
-
-
-
 ```python
 autoencoder.save_weights('autoencoder.h5')
 ```
-
 
 ```python
 pred = encoder.predict(creditcard_df_scaled)
 ```
 
-
 ```python
 pred.shape
 ```
 
-
-
-
     (8950, 10)
-
-
-
 
 ```python
 scores_2 = []
@@ -2639,31 +2343,16 @@ plt.ylabel('scores')
 plt.show()
 ```
 
-
-    
 ![png](/img/marketing/output_69_0.png)
-    
-
-
 
 ```python
 plt.plot(scores_1, 'bx-', color = 'r')
 plt.plot(scores_2, 'bx-', color = 'g')
 ```
 
-
-
-
     [&lt;matplotlib.lines.Line2D at 0x7fe548fa7650&gt;]
 
-
-
-
-    
 ![png](/img/marketing/output_70_1.png)
-    
-
-
 
 ```python
 kmeans = KMeans(4)
@@ -2672,15 +2361,10 @@ labels = kmeans.labels_
 y_kmeans = kmeans.fit_predict(creditcard_df_scaled)
 ```
 
-
 ```python
 df_cluster_dr = pd.concat([creditcard_df, pd.DataFrame({'cluster':labels})], axis = 1)
 df_cluster_dr.head()
 ```
-
-
-
-
 
   <div id="df-97d37e27-338e-4b69-976f-4a19949356fb">
     <div class="colab-df-container">
@@ -2878,21 +2562,12 @@ df_cluster_dr.head()
     }
   </style>
 
-
-
-
-
-
 ```python
 pca = PCA(n_components=2)
 prin_comp = pca.fit_transform(pred)
 pca_df = pd.DataFrame(data = prin_comp, columns =['pca1','pca2'])
 pca_df.head()
 ```
-
-
-
-
 
   <div id="df-9374cade-bd25-4ec9-8d1f-f6d4a55f4874">
     <div class="colab-df-container">
@@ -2994,18 +2669,10 @@ pca_df.head()
     }
   </style>
 
-
-
-
-
 ```python
 pca_df = pd.concat([pca_df,pd.DataFrame({'cluster':labels})], axis = 1)
 pca_df.head()
 ```
-
-
-
-
 
   <div id="df-3109e5e2-39b2-422d-b6cb-30fe90e5b29c">
     <div class="colab-df-container">
@@ -3114,21 +2781,13 @@ pca_df.head()
   </style>
   </div>
 
-
-
-
-
 ```python
 plt.figure(figsize=(10,10))
 ax = sns.scatterplot(x="pca1", y="pca2", hue = "cluster", data = pca_df, palette =['red','green','blue','yellow'])
 plt.show()
 ```
 
-
-    
 ![png](/img/marketing/output_75_0.png)
-    
-
 
 As we could see from training the autoencoders, the loss drops faster comparing to k-means and the clusters are better seperated as there are less overlaps between clusters from the PCA visualization
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
