@@ -1,0 +1,11 @@
+I"²<h1 id="click-below-to-see-github-repo-and-notebook">Click below to see Github repo and notebook:</h1>
+
+<p><a href="https://github.com/lizhiyidaniel/Creating_Wordcloud_using_NLP_and_TF-IDF">Original Repo</a>
+<a href="https://github.com/lizhiyidaniel/Creating_Wordcloud_using_NLP_and_TF-IDF/blob/main/TF_IDF_wordcloud.ipynb">Notebook</a></p>
+
+<p>Word Cloud is a data visualization technique that could be used to present text data. The size of the word could indicate the frequency or the importance of the words. Combined with TF-IDF, it could better illustrate the important issues in the text. Such application could be very useful in reports and presentations.</p>
+
+<p>TF-IDF refers a statistical measure that evaluates how relevant a word is to a document in a collection of documents. TF refers to term frequency and IDF is the inverse document frequency.</p>
+
+<p><img src="/img/sentiment-movie/recipes_wordcloud.png" alt="wordcloud" /></p>
+:ET
