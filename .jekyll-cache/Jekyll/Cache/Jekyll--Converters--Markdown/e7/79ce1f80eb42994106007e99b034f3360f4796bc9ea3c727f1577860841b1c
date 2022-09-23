@@ -1,0 +1,47 @@
+I"~
+<h1 id="item_based_recommender_system">Item_based_recommender_system</h1>
+<p>Recommender systems are algorithms that could help customers to discover products such as movies or songs by predicting their ratings of the item and display similar items they like. Item based recommender system is a form of collaborative filtering for recommender systems based on the similarity between items calculated using people’s ratings of those items.</p>
+
+<p><a href="https://github.com/lizhiyidaniel/Item_based_recommender_system/blob/main/Movie_Recommender_System.ipynb">View Notebook and code</a></p>
+
+<h1 id="theory-behind-recommender-systems">Theory behind Recommender systems:</h1>
+
+<p>Recommender systems are algorithms that could help customers to discover products such as movies or songs by predicting their ratings of the item and display similar items they like</p>
+
+<h2 id="what-is-user-based-colloborative-filter">What is User-based colloborative filter?</h2>
+
+<ul>
+  <li>User-based collaborative filtering works by building a matrix of every piece of content that users bought or viewed</li>
+  <li>Similarity scores are calculated between users to find similar users to each others</li>
+  <li>For similar users, content not viewed or bought are recommended to users that haven’t seen them before</li>
+</ul>
+
+<h3 id="limitations-of-user-based-collaborative-filter">Limitations of user-based collaborative filter:</h3>
+
+<ul>
+  <li>There are more users (8 billion by theory) than products so it would be more complex</li>
+  <li>The taste of customers could change over time</li>
+</ul>
+
+<h2 id="what-is-item-based-collaborative-filter">What is item-based collaborative filter?</h2>
+
+<p>It is a form of collaborative filtering for recommender systems based on the similarity between items calculated using people’s ratings of those items. Item-item collaborative filtering was invented and used by Amazon.com in 1998.</p>
+
+<ul>
+  <li>It works by recommending elements based on items rather than poeple</li>
+  <li>It could reduce the complexity of the problem comparing to user-based collaborative filteringg</li>
+  <li>Products features are stable comparing to users</li>
+</ul>
+
+<p><img src="/img/marketing/similarity.jpeg" alt="recommender" /></p>
+
+<p>Reference:</p>
+
+<p>https://levelup.gitconnected.com/the-mathematics-of-recommendation-systems-e8922a50bdea
+https://en.wikipedia.org/wiki/Item-item_collaborative_filtering</p>
+
+<h1 id="about-the-dataset">About the dataset:</h1>
+<p>Dataset MovieLens: https://grouplens.org/datasets/movielens/100k/</p>
+
+<p>MovieLens 100K movie ratings. Stable benchmark dataset. 100,000 ratings from 1000 users on 1700 movies. Released 4/1998.</p>
+:ET
