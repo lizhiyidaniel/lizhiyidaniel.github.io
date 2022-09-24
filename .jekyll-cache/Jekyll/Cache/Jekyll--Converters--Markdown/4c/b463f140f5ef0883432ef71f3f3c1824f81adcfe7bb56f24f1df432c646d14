@@ -1,0 +1,62 @@
+I"?<h1 id="crop_recommendation_system_by_supervised_machine_learning">crop_recommendation_system_by_supervised_machine_learning</h1>
+<p>Use Logistic Regression, Gaussian Naive Bayes, Random Forest and XGBoost to help farmers make informed decision about cultivation of crops. <br />
+The best model(random forest) achieves almost perfect accuracy to recommend the correct crop based on 7 features (N, P, K, temperature, humidity, ph, rainfall) <br /></p>
+
+<p><a href="https://github.com/lizhiyidaniel/crop_recommendation_system_by_supervised_machine_learning/blob/main/crop_recommendation_system_by_machine_learning.ipynb">View Notebook and code</a></p>
+
+<h1 id="overview-and-background">Overview and Background</h1>
+<p>Precision Agriculture is a management technique that is based on observing, measuring and responding to inter and intra-field variability in crops. <br />
+With the avent of techniques such as GPS and GNSS, farmers and researchers could measure many variables such as crop yield, terrain features, organic mantter content, moisture levels, nitrogen levels, K and others important variables. These data could also be collected by sensor arrays and these real-time sensors could measure chlorophyll levels to plant water status and etc. <br />
+All these could be used to optimize crop inputs such as water, fertilizer or chemicals. It could suggest farmers to grow the most optimal crop for maximum yeild and profit by these features. It could help farmers too reduce crop failure and take informed decision about farming strategy. <br /></p>
+
+<h1 id="about-the-dataset">About the Dataset</h1>
+<p>The dataset is obtained from kaggle and it has these data fields: <br /></p>
+
+<ul>
+  <li>N - ratio of Nitrogen content in soil</li>
+  <li>P - ratio of Phosphorous content in soil</li>
+  <li>K - ratio of Potassium content in soil</li>
+  <li>temperature - temperature in degree Celsius</li>
+  <li>humidity - relative humidity in %</li>
+  <li>ph - ph value of the soil</li>
+  <li>rainfall - rainfall in mm</li>
+  <li>The label is the type of recommended crop</li>
+</ul>
+
+<h1 id="techniques-used">Techniques used</h1>
+
+<p>This is a supervised learning task that tries to identify the category that the object belongs to. So, I’ll be trying commonly used classification algorithms to build the model.</p>
+
+<h2 id="logistic-regression">Logistic Regression</h2>
+
+<p>Logistic regresson is commonly used for binary classification problem and it uses sigmoid functin to return the probability of a label. The probability output from thee sigmoid function is compared wit a pre-defined threshold to generate a label. <br />
+An alternative and modified version of logistic regression is called multinomial logistic regression that could predict a multinomial probability. <br />
+common hyperparameters: penalty, max_iter, C, solver <br /></p>
+
+<h2 id="random-forest">Random Forest</h2>
+
+<p>Random forest is a commonly used ensemble methods that aggreagte results from multiple predictors (a collection of decisin trees). It utilizes bagging method that trains each tree on random sampling of the original dataset and take majority votes from trees. <br />
+The advantage of using random forest is that it has better generalization comparing to a single decision tree. <br />
+common hyperparameters: n_estimators, max_features, max_depth, min_samples_split, min_samples_leaf, boostrap <br /></p>
+
+<h2 id="naive-bayes">Naive Bayes</h2>
+
+<p>Naive Bayes is an algorithm based on Bayes’ Theorem. The naive assumption is that each feature is independent to each other and to calculate the conditional probability is based on prior knowledge. <br />
+The advantage of naive bayes is that is does not require a huge set of dataset. Gaussian Naive Bayes is a common type that follows the normal distribution. <br /></p>
+
+<h2 id="xgboost">XGBoost</h2>
+
+<p>XGBoost is an ensemble tecnique but takes a iterative approach. Each tree is not isolation of each other but is trained in sequence and each one is trained to correct the errors made by the previous one. <br />
+The advantage of it is that each model added is focused on correcting the mistakes made by the previous ones rather than learning the same mistakes.<br /></p>
+
+<h1 id="references">References</h1>
+<ul>
+  <li>https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset?datasetId=1046158&amp;sortBy=voteCount</li>
+  <li>https://en.wikipedia.org/wiki/Precision_agriculture</li>
+  <li>https://machinelearningmastery.com/multinomial-logistic-regression-with-python/</li>
+  <li>https://towardsdatascience.com/top-machine-learning-algorithms-for-classification-2197870ff501</li>
+  <li>https://towardsdatascience.com/a-beginners-guide-to-xgboost-87f5d4c30ed7</li>
+  <li>https://www.kaggle.com/code/atharvaingle/what-crop-to-grow/notebook#Guassian-Naive-Bayes</li>
+  <li>https://www.kaggle.com/code/ysthehurricane/crop-recommendation-system-using-lightgbm</li>
+</ul>
+:ET

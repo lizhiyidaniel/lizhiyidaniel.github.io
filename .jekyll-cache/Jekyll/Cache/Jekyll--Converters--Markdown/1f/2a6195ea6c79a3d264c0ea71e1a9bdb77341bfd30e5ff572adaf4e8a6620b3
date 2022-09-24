@@ -1,0 +1,4 @@
+I"Ã<h1 id="crop_recommendation_system_by_supervised_machine_learning">crop_recommendation_system_by_supervised_machine_learning</h1>
+<p>Use Logistic Regression, Gaussian Naive Bayes, Random Forest and XGBoost to help farmers make informed decision about cultivation of crops. <br />
+The best model(random forest) achieves almost perfect accuracy to recommend the correct crop based on 7 features (N, P, K, temperature, humidity, ph, rainfall) <br /></p>
+:ET
